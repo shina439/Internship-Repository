@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+      background-image: url('assets/R.jpeg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      background-attachment: fixed;
+    }
+    form{
+      width: 80%;
+      height: 500px;
+      border:none;
+      margin: 10px;
+      padding: 10px;
+      margin-top: 25px;
+    }
+    form span{
+      text-align: center;
+      font-size: 25px;
+      color: #fff;
+      display: block;
+      font-family: sans-serif;
+    }
+    form input{
+      width: 60%;
+      height: 40px;
+      display: block;
+      margin: 0 10px;
+      padding: 10px 0;
+      margin-top: 10px;
+      border: none;
+      outline: none;
+      border-radius: 50px;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.4);
+    }
+    form button{
+      width: 61%;
+      height: 60px;
+      display: block;
+      margin: 0 10px;
+      padding: 10px 0;
+      margin-top: 10px;
+      border: none;
+      outline: none;
+      border-radius: 50px;
+      font-weight: bold;
+      background: pink;
+      margin-top: 15px;
+    }
+    form button:hover{
+      background: transparent;
+      color: #fff;
+      border: 2px solid pink;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+    }
+    form .forget{
+      width: 65%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+    form .forget span{
+      display: flex;
+    }
+    form .forget span input{
+      width: 20px;
+      height: 20px;
+      margin: 0;
+      padding: 10px;
+    }
+    form .except{
+      display: flex;
+      width: 20%;
+      color: #fff;
+    }
+    form .except hr{
+      width: 20px;
+    }
+    form .options{
+      display: flex;
+      width: 50%;
+    }
+    form .options .btn{
+      width: 50%;
+      height: 60px;
+      border: none;
+      outline: none;
+      background: #fff;
+      font-weight: bold;
+      justify-content: space-between;
+    }
+    input::placeholder{
+      color: #fff;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="" method="post">
+      <span>Have an account?</span>
+      <input type="text" placeholder="Username" required>
+      <input type="text" placeholder="Password" required>
+      <button type="submit">SIGN IN</button>
+      <div class="forget">
+        <span><input type="checkbox"> Remember Me</span>
+        <span>Forgot Password</span>
+      </div>
+
+      <div class="except">
+        <hr>Or Signin with<hr>
+      </div>
+      <div class="options">
+         <button type="submit" class="btn">Facebook</button>
+         <button type="submit" class="btn">Twitter</button>
+      </div>
+    </form>
+  </center>
+</body>
+</html>

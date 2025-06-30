@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    background-color: #fff;
+}
+
+.logo{
+    /* height: 2%; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: aliceblue;
+    justify-content: space-between;   
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.342); 
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo img{
+    height: 60px;
+    align-self: center;
+    padding: 10px;
+    /* background-color: rgba(255, 255, 255, 0.325); */
+}
+.logo input{
+    padding: 7px;
+    margin: 19px;
+    width: 20%;
+    height: 20px;
+    border: 0px;
+    border-radius: 20px;
+    align-self: center;
+    text-align: center;
+    font-weight: 600;
+    transition: .6s ;
+    /* padding: 5px; */
+
+}
+
+/* .logo input:hover{ */
+    /* width: 700px; */
+/* } */
+.logo .number1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 50%; */
+    /* border: 1px solid blue; */
+    /* height: 15%; */
+}
+
+.logo .number1 .icon-box{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.753);
+    /* margin-top: 30px; */
+    padding-right: 36px;
+    border-radius: 36px;
+    box-shadow: 2px 2px 4px black;
+    /* align-self: center; */
+}
+
+ .logo .number1 .icon-box ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    gap: 40px;
+}
+
+.logo .number1 .icon-box ul li{
+    list-style-type: none;
+    /* border: 1px solid black; */
+    /* width: 60px; */
+    text-align: center;
+}
+
+.logo .number1 .icon-box ul .active{
+    background-color: rgba(25, 126, 214, 0.904);
+    /* width: 100px; */
+    padding: 8px 17px;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+
+.logo .number1 .icon-box ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: rgb(26, 23, 21);
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .9s;
+}
+
+.logo .number1 .icon-box ul li a:hover{
+    text-decoration: underline;
+    /* font-size: 1.2em; */
+}
+

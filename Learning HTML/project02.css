@@ -1,0 +1,82 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgba(0, 255, 255, 0.158);
+}
+
+.everything{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0,0,0,0.514)),url(images/04.jpeg) ;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.logo{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    /* border: 1px solid black;  */
+}
+
+.logo img{
+    height: 60px;
+    align-self: center;
+    padding: 15px;
+    /* background-color: rgba(255, 255, 255, 0.325); */
+}
+
+
+.everything-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 73%;
+    /* border: 1px solid red; */
+    /* padding: 30px; */
+    /* margin: 10px; */
+    /* margin-top: 10px; */
+}
+
+.everything-body h1{
+    font-size: 3.5em;
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 5px;
+    /* line-height: 5px; */
+}
+
+.everything-body .advert{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* grid-row: ; */
+}
+
+.everything-body .advert .imges{
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    /* border: 1px solid red; */
+}
+
+.everything-body a{
+    text-decoration: none;
+}
+
+.everything-body a button{
+    margin-top: 20px;
+    padding: 12px 90px;
+    border: 0;
+    background-color: aqua;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 800;
+}

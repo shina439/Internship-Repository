@@ -1,0 +1,245 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    background-color: #fff;
+}
+
+.everything{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0,0,0,0.13)), url(images/top-view-arrangement-with-salad-boxes-sauce.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+}
+
+.logo{
+    height: 12%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: aliceblue;
+    justify-content: space-between;   
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.342); 
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo img{
+    height: 60px;
+    align-self: center;
+    padding: 10px;
+    /* background-color: rgba(255, 255, 255, 0.325); */
+}
+.logo input{
+    padding: 7px;
+    margin: 19px;
+    width: 20%;
+    height: 20px;
+    border: 0px;
+    border-radius: 20px;
+    align-self: center;
+    text-align: center;
+    font-weight: 600;
+    transition: .6s ;
+    /* padding: 5px; */
+
+}
+
+/* .logo input:hover{ */
+    /* width: 700px; */
+/* } */
+.logo .number1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 50%; */
+    /* border: 1px solid blue; */
+    /* height: 15%; */
+}
+
+.logo .number1 .icon-box{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.753);
+    /* margin-top: 30px; */
+    padding-right: 36px;
+    border-radius: 36px;
+    box-shadow: 2px 2px 4px black;
+    /* align-self: center; */
+}
+
+ .logo .number1 .icon-box ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    gap: 40px;
+}
+
+.logo .number1 .icon-box ul li{
+    list-style-type: none;
+    /* border: 1px solid black; */
+    /* width: 60px; */
+    text-align: center;
+}
+
+.logo .number1 .icon-box ul .active{
+    background-color: rgba(25, 126, 214, 0.904);
+    /* width: 100px; */
+    padding: 8px 17px;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+}
+
+.logo .number1 .icon-box ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: rgb(26, 23, 21);
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .9s;
+}
+
+.logo .number1 .icon-box ul li a:hover{
+    text-decoration: underline;
+    /* font-size: 1.2em; */
+}
+
+.content{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 85%;
+}
+
+.content .message{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100%;
+    width: 70%;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.content .message h1{
+    font-size: 60px;
+    /* transform: scale(1); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    text-shadow: 0 0 50px #f57c51, 0 0 60px #f57c51, 0 0 70px #f57c51;
+    color: #f6f8e2;
+    /* line-height: 44px; */
+    margin: 0;
+}
+
+.content .message h2{
+    line-height: 4px;
+    font-size: 1.6em;
+    text-transform: capitalize;
+    font-family: cursive;
+}
+
+.content .message h3{
+    line-height: 4px;
+    font-size: 1.7em;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+}
+
+.content .message button{
+    margin-top: 10px;
+    width: 15%;
+    padding: 15px 15px;
+    border-radius: 30px;
+    border: 0;
+    background-color: #fcbc58;
+    box-shadow:  0 0 40px #f6f8e2, 0 0 50px #f6f8e2, 0 0 60px #0c0e00;
+    cursor: pointer;
+    transition: .7s ease;
+}
+
+.content .message button:hover{
+    transition: .7s ease;
+    transform: scale(1.1);
+}
+
+.content .message h4{
+    /* line-height: 4px; */
+    font-size: 1.5em;
+    text-transform: capitalize;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    color: #f6f8e2;
+    text-align: center;
+}
+
+.content .scroll{
+    /* margin-top: 5px; */
+    width: 100%;
+    /* padding: 30px; */
+    /* border: 1px solid red; */
+}
+
+.content .scroll marquee .scroll-all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.content .scroll marquee .scroll-all .popular{
+    height: 120px;
+    width: 150px;
+    border: 1px solid #e0ddca;
+    border-radius: 5px;
+    box-shadow:  0 0 2px #f6f8e2, 0 0 3px #f6f8e2, 0 4px #0c0e00;
+    background-position: center;
+    background-size: contain;
+}
+
+.content .right-message{
+    /* border: 1px solid red; */
+    height: 200px;
+    width: 30%;
+    padding: 10px;
+}
+.footer{
+    text-align: center;
+    background-color: #e0ddca;
+    margin: 0;
+    /* justify-content: center; */
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    /*padding: ; */
+}
+.footer .links-footer{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+}
+.footer .links-footer .abouts{
+    width: 100%;
+    height: fit-content;
+    /* border: 1px solid red; */
+    padding-left: 10px;
+    align-items: center;
+    
+
+}
+.footer .copyright{
+    /* border: 3px solid green; */
+    width: 100%;
+}
