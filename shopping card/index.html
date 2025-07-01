@@ -1,24 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
 
-<button>purchase</button>
-
-    <script>
-  let cart = [];
-  function addCartItems(item) {
-    cart.push(item);
-    consol.log('$(item)is added into cards');
-  }
-
-  function removeCardItemes(item) {
-    let index = card .index(item);
-  }
-    </script>
+    <button onclick="addCartItems()">purchase</button>
 </body>
+
+<script>
+
+    let item = [
+        { name: "bag", qty: 12, price: 200 },
+        { name: "shoes", qty: 13, price: 3000 },
+        { name: "cloths", qty: 15, price: 5000 },
+        { name: "perfumes", qty: 10, price: 1000 },
+    ]
+
+
+    let cart = [];
+    console.log(item)
+    console.log(cart)
+    for (let i = 0; i < item.length; i++) {
+        console.log(item[i].name)
+    }
+    function addCartItems() {
+        1 = "bag";
+        2 = "shoes";
+        3 = "cloths"
+        4 = "perfumes"
+        let adding = parseInt(prompt('chose what you want to buy from 1 to 4'))
+        if (adding == 1) {
+            let quant = parseInt(prompt("Enter the quantity"))
+            cart.push({ prodtobuy: adding, quantity: quant })
+            let pricee = quant * item[0].price
+        }
+        else if (adding == 2) {
+            let quant = parseInt(prompt("Enter the quantity"))
+            cart.push({ prodtobuy: adding, quantity: quant })
+            let pricee = quant * item[1].price
+        }
+        else if (adding == 3) {
+            let quant = parseInt(prompt("Enter the quantity"))
+            cart.push({ prodtobuy: adding, quantity: quant })
+            let pricee = quant * item[2].price
+        }
+        else if (adding == 4) {
+            let quant = parseInt(prompt("Enter the quantity"))
+            cart.push({ prodtobuy: adding, quantity: quant })
+            let pricee = quant * item[3].price
+        }
+
+        console.log(`The product you bought is ${adding} at the price of ${pricee}`)
+
+
+    }
+    console.log(addCartItems())
+</script>
+
 </html>
