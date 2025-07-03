@@ -1,4 +1,4 @@
-// let addressBook = [];
+let addressBook = [];
 
 function addContact(name,phone,email) {
     let contact = {
@@ -10,8 +10,8 @@ function addContact(name,phone,email) {
     console.log(`contact added: ${name}`);
 
 }
-   let addressBook = [];
-    addContact("Aisha", "1234567890", "aisha@mail.com"),
+//    let addressBook = [];
+//     addContact("Aisha", "1234567890", "aisha@mail.com"),
    
     function showContacts() {
     console.log("address book:");
@@ -19,13 +19,13 @@ function addContact(name,phone,email) {
         console.log("no contacts found.");
         return;
     }else {
-        addressBook,forEach((contact, index) => {
+        addressBook.forEach((contact, index) => {
             console.log(`${index + 1}. ${contact.name} | ${contact.phone} | ${contact.email}`);
 
         });
     }
 }
-function deletContact(name) {
+function deleteContact(name) {
     let index = addressBook.findIndex(contact => contact.name === name);
 
     if (index !== -1) {
@@ -37,7 +37,7 @@ function deletContact(name) {
     }
 }
 function searchContact(name) {
-    let result = addresssBook.filter(contact => contact.name.tolowerCase().includes(name .tolowerCase()));
+    let result = addressBook.filter(contact => contact.name.toLowerCase().includes(name .toLowerCase()));
      
     if (result.length> 0) {
         console.log("search result:");
