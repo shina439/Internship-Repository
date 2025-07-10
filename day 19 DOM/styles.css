@@ -17,19 +17,20 @@ body{
 .todo-app{
 width: 100%;
 max-width: 540px;
-background-color: #fff;
+background-color: #b68787;
 margin: 100px auto 20px ;
 padding: 40px 30px 70px;
 border-radius: 10px;
-height: 300px;
+height: 350px;
 }
 
 .todo-app h2{
-    color: #011330;
+    color: purple;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     margin-right: 150px;
+    font-size: 50px;
     
 }
 
