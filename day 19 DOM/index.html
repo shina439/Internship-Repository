@@ -1,12 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ar" dir="rtl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> to do list</title>
 </head>
+
 <body>
-    
-    <script src="index.js"></script>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To Do List<li class="fa fa-book"></li></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+               <div class="btn"> <button onclick="addTask()">Add</button></div>
+            </div>
+
+        
+        <ul id="list-container">
+            <!-- <li class="check">task 1</li>
+            <li>task 2</li>
+            <li>task 3</li> -->
+        </ul>
+    </div>
+    </div>
+        
+        
+    <script src="script.js"></script>
+
 </body>
+
 </html>
