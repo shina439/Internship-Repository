@@ -44,3 +44,17 @@ button:hover{
     margin-top: 1em;
     font-weight: bold;
 }
+@media (max-width: 500px) {
+    .game-container {
+      padding: 1rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    input[type="number"], button {
+      font-size: 1rem;
+    }
+  }
+  
